@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background: background-color: hex"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
 				"com",
 				"comboEmpresas"
 			],
@@ -39,7 +47,31 @@
 			"file": "/Users/cmilfont/projetos/javascriptfundamental/form.html",
 			"settings":
 			{
-				"buffer_size": 2917,
+				"buffer_size": 3667,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/cmilfont/projetos/javascriptfundamental/server.js",
+			"settings":
+			{
+				"buffer_size": 1128,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/cmilfont/projetos/javascriptfundamental/style.css",
+			"settings":
+			{
+				"buffer_size": 7562,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/cmilfont/projetos/javascriptfundamental/template.html",
+			"settings":
+			{
+				"buffer_size": 65,
 				"line_ending": "Unix"
 			}
 		}
@@ -63,6 +95,8 @@
 	},
 	"file_history":
 	[
+		"/Users/cmilfont/projetos/javascriptfundamental/template.html",
+		"/Users/cmilfont/projetos/javascriptfundamental/form.html",
 		"/Users/cmilfont/projetos/pacioli/public/javascripts/pacioli/LancamentoPrimeiraFormula.js",
 		"/Users/cmilfont/projetos/pacioli/public/javascripts/pacioli/app.js",
 		"/Users/cmilfont/projetos/pacioli/public/javascripts/teste.js",
@@ -154,10 +188,17 @@
 		"whole_word": false,
 		"wrap": false
 	},
+	"folders":
+	{
+		"mount_points":
+		[
+			"/Users/cmilfont/projetos/javascriptfundamental"
+		]
+	},
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -165,15 +206,15 @@
 					"file": "/Users/cmilfont/projetos/javascriptfundamental/form.html",
 					"settings":
 					{
-						"buffer_size": 2917,
+						"buffer_size": 3667,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2917,
-								2917
+								2667,
+								2667
 							]
 						],
 						"settings":
@@ -181,6 +222,88 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 733,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/cmilfont/projetos/javascriptfundamental/server.js",
+					"settings":
+					{
+						"buffer_size": 1128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								937,
+								937
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/cmilfont/projetos/javascriptfundamental/style.css",
+					"settings":
+					{
+						"buffer_size": 7562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/cmilfont/projetos/javascriptfundamental/template.html",
+					"settings":
+					{
+						"buffer_size": 65,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								44
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0,
 						"translation.y": 0,
@@ -230,7 +353,7 @@
 		[
 			[
 				"",
-				"/Users/cmilfont/projetos/jsonform/jsonform.sublime-project"
+				"/Users/cmilfont/projetos/pacioli/pacioli.sublime-project"
 			]
 		],
 		"width": 380
@@ -238,6 +361,6 @@
 	"show_minimap": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 299,
+	"side_bar_width": 273,
 	"status_bar_visible": true
 }

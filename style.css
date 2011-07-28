@@ -7,7 +7,10 @@ body {
 	font-family: "Trebuchet MS", Verdana, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #666;
-	background: #F5F5F5 url("images/bgSombra.gif") no-repeat center 90px;
+	/*background: #F5F5F5 url("images/bgSombra.gif") no-repeat center 90px;*/
+  /* #E0E1DE http://www.color-swatches.com/brillux/99-00-09/swatch.html  */
+  /* #E3E7D9 sigma http://www.color-swatches.com/sigma/sigma-224/4809/swatch.html */
+  background: #E0E1DE;
 }
 
 /* TAGs */
