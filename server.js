@@ -6,6 +6,8 @@ Array.prototype.add = function(el) {
 var express = require('express'),
   crypto = require('crypto');
 
+//crypto.createHash('md5').update("cmilfont@gmail.com").digest("hex");
+
 var app = express.createServer();
 app.set('views', __dirname + '/views');
 app.register('.html', require('ejs'));
@@ -22,11 +24,11 @@ app.get('/', function(req, res) {
 var instrutores = [{id:10, nome:"Christiano Milfont"}];
 var cursos = [];
 cursos.add({
-  instrutores: instrutores, nome: "Javascript Fundamental"
+  id: 1, nome: "Javascript Fundamental"
 });
 
 app.get('/cursos', function(req, res){
-  res.send(JSON.stringify(cursos));
+  res.send(JSON.parse(cursos));
 });
 
 app.get('/instrutores', function(req, res){ 
@@ -39,8 +41,9 @@ app.post('/cursos', function(req, res){
 
   //var objeto = req.rawBody;
   var objeto = req.body.objeto;
+  objeto['id'] = 1;
   
-  cursos.add(JSON.parse(objeto));
+  //cursos.add(JSON.parse(objeto));
   res.send(JSON.parse(objeto));
 });
 

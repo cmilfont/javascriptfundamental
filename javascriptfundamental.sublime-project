@@ -47,7 +47,23 @@
 			"file": "/Users/cmilfont/projetos/javascriptfundamental/form.html",
 			"settings":
 			{
-				"buffer_size": 3667,
+				"buffer_size": 3722,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/cmilfont/projetos/javascriptfundamental/extjs.html",
+			"settings":
+			{
+				"buffer_size": 1482,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/cmilfont/projetos/javascriptfundamental/djr.js",
+			"settings":
+			{
+				"buffer_size": 985,
 				"line_ending": "Unix"
 			}
 		},
@@ -55,7 +71,7 @@
 			"file": "/Users/cmilfont/projetos/javascriptfundamental/server.js",
 			"settings":
 			{
-				"buffer_size": 1128,
+				"buffer_size": 1199,
 				"line_ending": "Unix"
 			}
 		},
@@ -198,7 +214,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -206,15 +222,15 @@
 					"file": "/Users/cmilfont/projetos/javascriptfundamental/form.html",
 					"settings":
 					{
-						"buffer_size": 3667,
+						"buffer_size": 3722,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2667,
-								2667
+								3140,
+								3087
 							]
 						],
 						"settings":
@@ -224,30 +240,30 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0,
-						"translation.y": 733,
+						"translation.y": 648,
 						"zoom_level": 1
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/cmilfont/projetos/javascriptfundamental/server.js",
+					"file": "/Users/cmilfont/projetos/javascriptfundamental/extjs.html",
 					"settings":
 					{
-						"buffer_size": 1128,
+						"buffer_size": 1482,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								937,
-								937
+								1192,
+								1192
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -259,6 +275,62 @@
 				},
 				{
 					"buffer": 2,
+					"file": "/Users/cmilfont/projetos/javascriptfundamental/djr.js",
+					"settings":
+					{
+						"buffer_size": 985,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								782,
+								782
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/cmilfont/projetos/javascriptfundamental/server.js",
+					"settings":
+					{
+						"buffer_size": 1199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								749,
+								749
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 65,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "/Users/cmilfont/projetos/javascriptfundamental/style.css",
 					"settings":
 					{
@@ -286,7 +358,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "/Users/cmilfont/projetos/javascriptfundamental/template.html",
 					"settings":
 					{
@@ -361,6 +433,6 @@
 	"show_minimap": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 273,
+	"side_bar_width": 246,
 	"status_bar_visible": true
 }
