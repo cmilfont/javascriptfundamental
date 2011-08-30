@@ -17,15 +17,15 @@ app.use(express.bodyDecoder());
 app.use(express.cookieDecoder());
 app.use(express.session({ secret: 'milfont' }));
 
+app.use(app.router);
+
 app.get('/', function(req, res) {
   res.send("Javascript Fundamental");
 });
 
 var instrutores = [{id:10, nome:"Christiano Milfont"}];
 var cursos = [];
-cursos.add({
-  id: 1, nome: "Javascript Fundamental"
-});
+cursos.add({id: 1, nome: "Javascript Fundamental"});
 
 app.get('/cursos', function(req, res){
   res.send(JSON.parse(cursos));
@@ -33,6 +33,24 @@ app.get('/cursos', function(req, res){
 
 app.get('/instrutores', function(req, res){ 
   res.send(JSON.stringify(instrutores));
+});
+
+var oportunidades = [
+  {
+    id:1
+    , data: "2011-08-01"
+    , expira: "2011-12-31"
+    , descricao: "Teste"
+    , empresa: {
+      nome: "Milfont Consulting"
+    }
+    , produto: {
+      nome: "Treinamento Javascript Fundamental"
+    }
+  }
+];
+app.get('/oportunidades:format', function(req, res){ 
+  res.send(JSON.stringify({data: oportunidades}));
 });
 
 app.post('/cursos', function(req, res){
@@ -45,6 +63,16 @@ app.post('/cursos', function(req, res){
   
   //cursos.add(JSON.parse(objeto));
   res.send(JSON.parse(objeto));
+});
+
+app.get('/djr', function(req, res){
+  var arr = [];
+  for(var name in req) {
+    //console.log(name);
+    arr.add[name];
+  }
+  console.log(app);
+  res.send("teste");
 });
 
 app.use(express.errorHandler({ showStack: true }));
