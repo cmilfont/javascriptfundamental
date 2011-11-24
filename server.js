@@ -86,7 +86,8 @@ app.post('/cursos', function(req, res){
   objeto['id'] = cursos_id;
   cursos_id +=1;
   cursos.add(objeto);
-  res.send(cursos);
+  res.send(objeto)
+  //res.send(cursos);
 });
 
 app.put('/cursos/:id', function(req, res){

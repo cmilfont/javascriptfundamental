@@ -107,6 +107,7 @@ CursosController.prototype.routes = {
     }
 }
 
+/*
     var callback = function(cursos) {
         
         $("#top").html("").render({
@@ -134,3 +135,4 @@ CursosController.prototype.routes = {
         });
     
     };
+*/
