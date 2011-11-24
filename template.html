@@ -1,3 +1,12 @@
 <div id="curso">
-    <div><span>${curso.date}</span></div>
+    ${partial("cursos")}
+</div>
+    
+<div id="cursos">
+    <div>
+        <span>${curso.date}</span>
+        <span>${curso.nome}</span> - 
+        <a name="${curso.id}" href="#" >Editar</a> 
+        <a name="${curso.id}" href="#" >Excluir</a>
+    </div>
 </div>

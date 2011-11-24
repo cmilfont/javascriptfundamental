@@ -3,6 +3,13 @@ Array.prototype.add = function(el) {
   return this;
 };
 
+//http://ejohn.org/blog/javascript-array-remove/
+Array.prototype.remove = function(from, to) {
+  var rest = this.slice((to || from) + 1 || this.length);
+  this.length = from < 0 ? this.length + from : from;
+  return this.push.apply(this, rest);
+};
+
 var express = require('express'),
   crypto = require('crypto');
 
@@ -25,11 +32,16 @@ app.get('/', function(req, res) {
 
 var instrutores = [{id:10, nome:"Christiano Milfont"}];
 var cursos = [];
-cursos.add({id: 1, nome: "Javascript Fundamental"});
-
-app.get('/cursos', function(req, res){
-  res.send(JSON.parse(cursos));
+cursos.add({id: 1, 
+    nome: "Javascript Fundamental", 
+    date: "01/01/2011", 
+    description:"", 
+    value: "100",
+    empresa: {
+    	id: 1
+    }
 });
+var cursos_id = 2;
 
 app.get('/instrutores', function(req, res){ 
   res.send(JSON.stringify(instrutores));
@@ -53,29 +65,54 @@ app.get('/oportunidades:format', function(req, res){
   res.send(JSON.stringify({data: oportunidades}));
 });
 
-app.post('/cursos', function(req, res){
-
-  console.log(req.rawBody);
-
-  //var objeto = req.rawBody;
-  var objeto = req.body.objeto;
-  objeto['id'] = 1;
-  
-  //cursos.add(JSON.parse(objeto));
-  res.send(JSON.parse(objeto));
+app.get('/cursos', function(req, res){
+  res.send(cursos);
 });
 
-app.get('/djr', function(req, res){
-  var arr = [];
-  for(var name in req) {
-    //console.log(name);
-    arr.add[name];
+app.get('/cursos/:id', function(req, res){
+	var curso = {};
+	  for(var i = 0; i < cursos.length; i++) {
+        var temp = cursos[i];
+        if(req.params.id == temp.id) {
+            curso = temp;
+        }
+      }
+  res.send(curso);
+});
+
+app.post('/cursos', function(req, res){
+  console.log(req.rawBody);
+  var objeto = JSON.parse(req.rawBody);
+  objeto['id'] = cursos_id;
+  cursos_id +=1;
+  cursos.add(objeto);
+  res.send(cursos);
+});
+
+app.put('/cursos/:id', function(req, res){
+  console.log(req.rawBody, req.params.id);
+  var objeto = JSON.parse(req.rawBody);
+  for(var i = 0; i < cursos.length; i++) {
+  	var temp = cursos[i];
+  	if(objeto.id == temp.id) {
+  		cursos[i] = objeto;
+  	}
   }
-  console.log(app);
-  res.send("teste");
+  res.send(cursos);
+});
+
+app.delete('/cursos/:id', function(req, res){
+  console.log(req.rawBody, req.params.id);
+  var objeto = JSON.parse(req.rawBody);
+  for(var i = 0; i < cursos.length; i++) {
+    var temp = cursos[i];
+    if(objeto.id == temp.id) {
+        cursos.remove(i, i);
+    }
+  }
+  res.send(cursos);
 });
 
 app.use(express.errorHandler({ showStack: true }));
 app.use(express.staticProvider(__dirname));
 app.listen(8001);
-

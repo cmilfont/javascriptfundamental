@@ -10,7 +10,7 @@ body {
 	/*background: #F5F5F5 url("images/bgSombra.gif") no-repeat center 90px;*/
   /* #E0E1DE http://www.color-swatches.com/brillux/99-00-09/swatch.html  */
   /* #E3E7D9 sigma http://www.color-swatches.com/sigma/sigma-224/4809/swatch.html */
-  background: #E0E1DE;
+  background: #E0E1DE;  
 }
 
 /* TAGs */
@@ -130,9 +130,17 @@ ul {
 /* TOP */
 #top {
   height: 66px;
-	background: url("images/topoFundo.gif") repeat-x 0 -25px;
   border-bottom: 2px solid #FFF;
+  background-color:#4d6070;
+  color: #fff;
+  margin:auto;
 }
+
+#top a {
+    text-decoration: none;
+    color:#59B5F7;
+}
+
 #top h1 {
   position: relative;
 	margin: 0 auto;
@@ -203,7 +211,6 @@ ul {
   margin-bottom: 15px;
 	padding: 15px;
   width: 940px;
-	background: #FFF url("images/baseFundo.gif") repeat-x bottom;
 	border: 2px solid #EAEAEA;
 	border-top: none;
   box-shadow: 0 2px 10px #999;
@@ -211,8 +218,8 @@ ul {
   -webkit-box-shadow: 0 2px 10px #999;
 }
 #content {
-	float: left;
-  padding-bottom: 25px;
+	/*float: left;*/
+    padding-bottom: 25px;
 	width: 670px;
 }
 #side {

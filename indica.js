@@ -19,11 +19,21 @@
 				//.append('<li style="z-index:1;" class="breadcrumb-last"><a href="#">Contatos</a></li>')
 			$(this).append(breadcrumb)
 		},
-		mensagemGlobal: function(msg, effect) {
+		globalMessage: function(msg, effect) {
 			var $effect = effect || "shake";
 			var $span = $(this).find("span");
-			$span.html(msg);
-			$(this).show().effect($effect, {color:"#A1807B", times:3 }, 100);
+			var newMsg = msg.substring(0, 56);
+			$span.html(newMsg);
+			if(msg.length > 56) {
+				$("<a>")
+					.attr("href", "#alerta")
+					.html("...")
+					.click(function(){
+					 	/* TODO */
+					})
+					.appendTo($span);
+			}
+			$(this).show()//.effect($effect, {color:"#A1807B", times:3 }, 100);
 			return this;
 		}
 	});
