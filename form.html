@@ -13,14 +13,20 @@
 
   <meta name="viewport" content="width=device-width; initial-scale=1.0" />
   
+  <!--
   <link rel="stylesheet" href="style.css" type="text/css">
-  
+  -->
 </head>
 
 <body id="content">
 
     <div id="top">
       <h1>Area</h1>
+      <table>
+          <tbody>
+              
+          </tbody>
+      </table>
     </div>
 
     <div class="quadro">
@@ -74,6 +80,7 @@
   <script type="text/javascript" src="jsonform.min.js"></script>
   <script type="text/javascript" src="el.min.js"></script>
 
+  <script type="text/javascript" src="sammy-0.7.0.min.js"></script>
 
   
   <!--
@@ -82,62 +89,7 @@
   -->
   
   <script type="text/javascript" src="djr.js"></script>
-  
-<script>
-;(function($){
-
-    var _workflow = function(config, el) {
-        var $form = el,
-            _createAction = config.create || "create",
-            _updateAction = config.update || "update";
-
-        var _executeAction = function(json) {
-            var _action  = _createAction,
-                _url     = config.templateCreate,
-                _success = config.successCreate;
-            if(json.id) { 
-                _action  = _updateAction;
-                _url     = config.templateUpdate;
-                _success = config.successUpdate;
-            }
-            config.controller[_action](json, function(){
-                $.get(_url, function(template){
-                    var html = new Eljs({template:template}).parse(json);
-                    _success(html);
-                });
-            });
-        };
-
-        return function(){
-            var json = $form.getJSON();
-            _executeAction(json);
-            return false;
-        }
-    };
-
-    $.fn.extend({
-        workflow: function(config){
-            var el = $(this);
-            $(this).submit(_workflow(config, el));
-        }
-    });
-
-})(jQuery);
-
-$(function() {
-    $("form").workflow({
-        templateCreate: "template.html",
-        templateUpdate: "template.html",
-        controller: new CursosController(),
-        successCreate: function(fragmento){
-            $("#top").html(fragmento);
-        },
-        successUpdate: function(fragmento){
-            $("#top").html(fragmento);
-        }
-    });
-});
-</script>
+  <script type="text/javascript" src="workflow.js"></script>
 
 <!--
 <div style="margin:auto; height:800px; width:800px; background-color:#fff; border:3px solid #DADBD9;">
