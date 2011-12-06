@@ -1,0 +1,50 @@
+    <div id="top">
+      <h1>Area</h1>
+      <table>
+          <tbody>
+              
+          </tbody>
+      </table>
+    </div>
+
+    <div class="quadro">
+      <h1>index</h1>
+    </div>
+
+    <div class="quadro">
+
+<form action='#!/create_curso' method="post" name='jsonform'>
+      <input type='hidden' name='id' />  
+
+      <p>
+        <label for='empresa.id'>Empresa:</label> 
+        <select name='empresa.id'> 
+          <option value='1'>Milfont Consulting</option> 
+          <option value='2'>TriadWorks</option> 
+          <option value='3'>Caelum</option> 
+        </select> 
+      </p>
+      
+      <p>
+        <label for='empresa.name'>Nome da Empresa:</label>
+        <input type='text' name='empresa.name' />
+      </p>  
+      
+      <p>
+        <label for='nome'>Nome:</label> <input type='text' name='nome' /> 
+      </p>
+      <p> 
+        <label for='date'>Data:</label>  <input type='text' name='date' value='01/01/2011' /> 
+      </p> 
+      <p>
+        <label for='description'>Descrição:</label> <textarea name='description'></textarea>
+      </p> 
+      <p>
+        <label for='value'>Valor:</label> <input type='text' name='value' />
+      </p>
+      <p>
+        <input type='submit' name='button' value="Cadastrar" />
+      </p>
+    </form>
+      
+    </div>

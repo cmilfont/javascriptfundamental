@@ -150,9 +150,9 @@ outra
 	$("a[href='#home']").click(function(){
 		$("#conteudo").html("");
 		//$( "#limbo" ).dialog({position: [$("#conteudo").offset().left + 60, $("#profile").offset().top +20] });
-		$( "#limbo" ).show().offset({top: $("#conteudo").offset().top + 20 , left:$("#conteudo").offset().left + 60})
+		$( "#limbo" ).hide().offset({top: $("#conteudo").offset().top + 20 , left:$("#conteudo").offset().left + 60})
 		return false;
 	});
 
-
+    $( "#limbo" ).hide();
 })
