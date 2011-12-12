@@ -99,7 +99,7 @@ app.put('/cursos/:id', function(req, res){
   		cursos[i] = objeto;
   	}
   }
-  res.send(cursos);
+  res.send(objeto);
 });
 
 app.delete('/cursos/:id', function(req, res){
